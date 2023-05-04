@@ -1,0 +1,20 @@
+footer {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: #808080;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #312e2e;
+}
