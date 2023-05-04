@@ -9,10 +9,27 @@ footer {
     padding-top: 15px;
 }
 
+.info-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.col1 img {
+    max-width: 50%;
+    height: auto;
+}
+
+.col2 {
+    display: flex;
+    justify-content: center;
+}
+
 nav {
     font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 50px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 ul {
