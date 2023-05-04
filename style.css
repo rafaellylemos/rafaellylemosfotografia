@@ -2,17 +2,35 @@ footer {
     font-family: 'Red Hat Text', sans-serif;
     font-size: 10px;
     text-align: center;
-    color: #808080;
+    color: #c0bebe;
+    background-color: #557A7D;
+    padding: 100px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+
 }
 
 ul {
-    display: flex;
-    justify-content: space-between;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+    font-size: 12px;
+}
+
+li {
+    text-align: center;
+    padding: 2.5px;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #e8d5d3;;
 }
 
 a:hover {
