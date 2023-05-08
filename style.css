@@ -74,11 +74,123 @@ input[type="radio"] {
     vertical-align: middle;
   }
 
-  .text-box {
-    display: flex;
-    justify-content: center;
-  }
-
   .text {
     text-align: left;
   }
+  
+  .contact {
+    display: flex;
+    justify-content: end;
+    font-family: 'Red Hat Text', sans-serif;
+    color: #c0bebe;
+    background-color: #557A7D;
+    padding: 100px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
+
+  .contact-box {
+    display: inline;
+  }
+
+  .contact-input {
+    background-color: #557A7D;
+    border-color: #c0bebe;
+    border-style: groove;
+    color: #c0bebe;
+    font-size: 12px;
+    width: 200px;
+    height: 20px;
+  }
+
+  .placeholder-color::placeholder {
+    color: #c0bebe;
+    font-size: 9px;
+  }
+
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+    text-decoration: none;
+ }
+
+ textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+    text-decoration: none;
+ }
+
+ textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+
+#contact-mensagem {
+    height: 80px;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  input[type="text"]:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+
+  textarea::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+
+  input[type="email"]::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  input[type="email"]:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+
+  .style-bt {
+    position: relative;
+  }
+  
+  .contact-send-bt {
+    background-color: transparent;
+    border-color: #c0bebe;
+    border-style: groove;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    color: #c0bebe;
+    transition: transform 0.3s ease;
+    position:absolute;
+    right: 11px;
+    bottom: 2px;
+    z-index: 1;
+  }
+
+  .contact-send-bt:hover {
+    cursor: pointer;
+  }
+
+  .square {
+    background-color: #312e2e;
+    width: 80px;
+    height: 15px;
+    margin-top: 7.5px;
+    margin-right: 5px;
+    margin-left: 123px;
+    z-index: 2;
+  }
+
+  .square:hover {
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+    background-image: linear-gradient(to right, transparent, transparent)
+  }
+
+  

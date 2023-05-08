@@ -9,35 +9,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Red+Hat+Text:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <title>Hey, você! [:</title>
+    <title>Contato - Rafaelly Lemos</title>
 </head>
 <body>
-    <form action="sendmail.php" method="get">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"><br><br>
-      
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email"><br><br>
+    <div class="contact">
+        <div class="contact-box">
+            <form autocomplete="off" action="sendmail.php" method="get">
+                <label for="nome"></label>
+                <input class="contact-input placeholder-color" type="text" id="nome" name="nome" placeholder="NOME"><br><br>
+            
+                <label for="email"></label>
+                <input class="contact-input placeholder-color" type="email" id="email" name="email" placeholder="E-MAIL"><br><br>
+                <p> Selecione a opção desejada:</p>
+                <div class="text-box">
+                    <div class="text">
+                        <label for="orcamento">
+                        <input id="orcamento" type="radio" name="opcao" value="orcamento" style="display: inline-block;"> Orçamento
+                        </label><br>
+                        <label for="info">
+                        <input id="info" type="radio" name="opcao" value="info" style="display: inline-block;"> Informação
+                        </label><br>
 
-        <p> Selecione a opção desejada:</p>
-        <div class="text-box">
-            <div class="text">
-                <label for="orcamento">
-                <input id="orcamento" type="radio" name="opcao" value="orcamento" style="display: inline-block;"> Orçamento
-                </label><br>
-                <label for="info">
-                <input id="info" type="radio" name="opcao" value="info" style="display: inline-block;"> Informação
-                </label><br>
-
-                <label for="sugest">
-                <input id="sugest" type="radio" name="opcao" value="sugest" style="display: inline-block;"> Sugestão
-                </label><br><br>
+                        <label for="sugest">
+                        <input id="sugest" type="radio" name="opcao" value="sugest" style="display: inline-block;"> Sugestão
+                        </label><br><br>           
+                    </div>
+                <label for="contact-mensagem"></label>
+                <textarea class="contact-input placeholder-color" id="contact-mensagem" name="mensagem" placeholder="MENSAGEM"></textarea><br><br>
+            <div class="style-bt">
+                <input class="contact-send-bt" type="submit" value="ENVIAR">
+                <div class="square"></div>
             </div>
+            </form>
         </div>
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem"></textarea><br><br>
-      
-        <input type="submit" value="Enviar">
-      </form>
+    </div>
 </body>
 </html>
