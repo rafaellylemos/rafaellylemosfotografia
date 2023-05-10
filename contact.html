@@ -9,39 +9,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Red+Hat+Text:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
     <title>Contato - Rafaelly Lemos</title>
 </head>
 <body>
+    <div class="line"></div>
     <div class="contact">
         <div class="contact-box">
             <form autocomplete="off" action="sendmail.php" method="get">
-                <label for="nome"></label>
-                <input class="contact-input placeholder-color" type="text" id="nome" name="nome" placeholder="NOME"><br><br>
-            
-                <label for="email"></label>
-                <input class="contact-input placeholder-color" type="email" id="email" name="email" placeholder="E-MAIL"><br><br>
-                <p> Selecione a opção desejada:</p>
-                <div class="text-box">
-                    <div class="text">
-                        <label for="orcamento">
-                        <input id="orcamento" type="radio" name="opcao" value="orcamento" style="display: inline-block;"> Orçamento
-                        </label><br>
-                        <label for="info">
-                        <input id="info" type="radio" name="opcao" value="info" style="display: inline-block;"> Informação
-                        </label><br>
+                <div class="line1">
+                    <label for="nome"></label>
+                    <input class="contact-input placeholder-color" type="text" id="nome" name="nome" placeholder="NOME"><br><br>
+                
+                    <label for="email"></label>
+                    <input class="contact-input placeholder-color" type="email" id="email" name="email" placeholder="E-MAIL"><br><br>   
+                </div>
 
-                        <label for="sugest">
-                        <input id="sugest" type="radio" name="opcao" value="sugest" style="display: inline-block;"> Sugestão
-                        </label><br><br>           
+                <div class="line2">
+                    <label for="telefone"></label>
+                    <input class="contact-input placeholder-color" type="tel" id="telefone" name="telefone" placeholder="TELEFONE"><br><br>
+
+                    <label for="data"></label>
+                    <input class="contact-input placeholder-color" type="text" id="data" name="data" placeholder="DATA DO EVENTO"><br><br>
+                </div>
+
+                <div class="line3">
+                    <p> Selecione a opção desejada:</p>
+                    <div class="text-box">
+                        <div class="text">
+                            <label for="orcamento">
+                            <input id="orcamento" type="radio" name="opcao" value="orcamento" style="display: inline-block;"> Orçamento
+                            </label><br>
+                            <label for="info">
+                            <input id="info" type="radio" name="opcao" value="info" style="display: inline-block;"> Informação
+                            </label><br>
+
+                            <label for="sugest">
+                            <input id="sugest" type="radio" name="opcao" value="sugest" style="display: inline-block;"> Sugestão
+                            </label><br><br>           
+                        </div>
                     </div>
-                <label for="contact-mensagem"></label>
-                <textarea class="contact-input placeholder-color" id="contact-mensagem" name="mensagem" placeholder="MENSAGEM"></textarea><br><br>
-            <div class="style-bt">
+
+                    <div class="line4">
+                    <label for="contact-mensagem"></label>
+                    <textarea class="contact-input placeholder-color" id="contact-mensagem" name="mensagem" placeholder="MENSAGEM"></textarea><br><br>
+                </div>
+
+                <div class="style-bt" id="div-send-bt">
+                <div id="square"></div>
                 <input class="contact-send-bt" type="submit" value="ENVIAR">
-                <div class="square"></div>
             </div>
             </form>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
