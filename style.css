@@ -1,7 +1,7 @@
 .test-main {
     height: 500px;
     background-color: rgb(248, 234, 230);
-    margin: 8px;
+    margin: 15px;
 }
 
 .slideshow {
@@ -23,9 +23,27 @@
     opacity: 0;
     transition: opacity 2s ease-in-out;
   }
+
+  .slideshow-nav:hover {
+    cursor: pointer;
+  }
+
+  .slideshow-nav {
+    position: absolute;
+    margin-left: 27px;
+    margin-top: 7px;
+  }
   
   .slideshow img:first-child {
     opacity: 1;
+  }
+
+  .slide-nav {
+    margin-top: 7px;
+  }
+
+  .slide-nav:hover {
+    text-decoration:underline;
   }
   
 footer {
