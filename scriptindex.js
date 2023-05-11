@@ -17,7 +17,7 @@ function showSlides() {
   slideNavs.forEach(function(slideNav) {
     var navIndex = slideNav.getAttribute('data-slide-index');
     if (navIndex == slideIndex) {
-      slideNav.style.color = 'black';
+      slideNav.style.color = '#557A7D';
     } else {
       slideNav.style.color = 'gray';
     }
@@ -41,10 +41,17 @@ slideNavs.forEach(function(slideNav) {
     slideNavs.forEach(function(nav) {
       var navIndex = nav.getAttribute('data-slide-index');
       if (navIndex == slideIndex) {
-        nav.style.color = 'black';
+        nav.style.color = '#557A7D';
       } else {
         nav.style.color = 'gray';
       }
     });
   });
+});
+
+const menuButton = document.querySelector('.button-menu');
+const menu = document.getElementById('menu');
+
+menuButton.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
 });

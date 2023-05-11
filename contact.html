@@ -4,19 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Red+Hat+Text:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Julius+Sans+One&family=Jura:wght@300&family=Red+Hat+Text:ital,wght@0,300;1,300&family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylecontact.css">
+
     <link href="style.css" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    
     <title>Contato - Rafaelly Lemos</title>
 </head>
+
+<header>
+    <section class="barra-menu--contact">
+        <div class="phrase--contact">Fotografar o que se sente, sentir o que se fotografa</div>
+
+        <div class="menubar--contact">
+            <div class="button-menu--contact">Menu</div>
+            <nav id="menu--contact" class="hidden--contact">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">A Rafa</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="contact.html">Faça contato!</a></li>
+                </ul>
+              </nav>
+        </div>
+    </section>
+</header>
 <body>
     <div class="line"></div>
-    <div class="contact">
+        <div class="contact">
+            <div class="mytext">
+                <p class="grateful">Gratidão</p>
+                <p class="grat-text">Por você ter chegado até aqui e escolhido entrar em contato!
+                    <br> 
+                Agora me fala ai ao lado: 
+                <br>
+                Sobre o quê quer falar?</p>
+            </div>
+
         <div class="contact-box">
             <form autocomplete="off" action="sendmail.php" method="get">
                 <div class="line1">
@@ -42,6 +76,7 @@
                             <label for="orcamento">
                             <input id="orcamento" type="radio" name="opcao" value="orcamento" style="display: inline-block;"> Orçamento
                             </label><br>
+
                             <label for="info">
                             <input id="info" type="radio" name="opcao" value="info" style="display: inline-block;"> Informação
                             </label><br>
@@ -49,18 +84,18 @@
                             <label for="sugest">
                             <input id="sugest" type="radio" name="opcao" value="sugest" style="display: inline-block;"> Sugestão
                             </label><br><br>           
-                        </div>
                     </div>
+                </div>
 
-                    <div class="line4">
+                <div class="line4">
                     <label for="contact-mensagem"></label>
                     <textarea class="contact-input placeholder-color" id="contact-mensagem" name="mensagem" placeholder="MENSAGEM"></textarea><br><br>
                 </div>
 
                 <div class="style-bt" id="div-send-bt">
-                <div id="square"></div>
-                <input class="contact-send-bt" type="submit" value="ENVIAR">
-            </div>
+                    <div id="square"></div>
+                    <input class="contact-send-bt" type="submit" value="ENVIAR">
+                </div>
             </form>
         </div>
     </div>
